@@ -11,7 +11,8 @@ const TotalSalesOverTime = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/order/total-sales-over-time');
+        // const response = await axios.get('http://localhost:3000/api/order/total-sales-over-time');
+        const response = await axios.get('https://datavis-backend.vercel.app/api/order/total-sales-over-time');
         const data = response.data;
 
         const labels = data.map(item => `${item._id.month}/${item._id.year}`);

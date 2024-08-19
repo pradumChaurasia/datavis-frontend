@@ -11,7 +11,8 @@ const DailyRepeatCustomers = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/order/getDailyRepeatCustomers');
+        // const response = await axios.get('http://localhost:3000/api/order/getDailyRepeatCustomers');
+        const response = await axios.get('https://datavis-backend.vercel.app/api/order/getDailyRepeatCustomers');
         const data = response.data;
         data.sort((a,b)=>{
             const dateA = new Date(a._id.year, a._id.month - 1);

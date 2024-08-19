@@ -13,7 +13,8 @@ const YearlyRepeatCustomers = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/order/getYearlyRepeatCustomers');
+        // const response = await axios.get('http://localhost:3000/api/order/getYearlyRepeatCustomers');
+        const response = await axios.get('https://datavis-backend.vercel.app/api/order/getYearlyRepeatCustomers');
         let data = response.data;
         data = data.sort((a, b) => a._id - b._id);
         const labels = data.map(item => item._id.toString());

@@ -19,7 +19,8 @@ const CustomerDistribution = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/customer/customer-distribution');
+        // const response = await axios.get('http://localhost:3000/api/customer/customer-distribution');
+        const response = await axios.get('https://datavis-backend.vercel.app/api/customer/customer-distribution');
         const data = response.data;
 
         const labels = data.map(item => item._id);

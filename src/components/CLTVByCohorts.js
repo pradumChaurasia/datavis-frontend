@@ -11,7 +11,8 @@ const CLTVByCohorts = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/order/cltv-by-cohorts');
+        // const response = await axios.get('http://localhost:3000/api/order/cltv-by-cohorts');
+        const response = await axios.get('https://datavis-backend.vercel.app/api/order/cltv-by-cohorts');
         const data = response.data;
 
         data.sort((a, b) => {
