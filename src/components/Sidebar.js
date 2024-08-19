@@ -11,7 +11,7 @@ const Sidebar = () => {
         <div>
             <div className="sidebar">
                 <button onClick={toggleTheme} style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
-                    {theme === 'light' ? <FaMoon style={{ color: 'gray', fontSize: '24px' }} /> : <FaSun style={{ color: 'yellow', fontSize: '24px' }} />}
+                    {theme === 'light' ? <FaMoon style={{ color: 'gray', fontSize: '24px',marginLeft:'-6px', display:'flex' }} /> : <FaSun style={{ color: 'yellow', fontSize: '24px' ,marginLeft:'-6px', display:'flex'}} />}
                 </button>
             </div>
             <div className="navbar">
